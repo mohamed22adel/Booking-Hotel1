@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    
+}
+
+.room_background{
+    display: flex;
+    position: relative;
+    bottom: 142px;
+    width: 100%;
+    bottom: 250px;
+    height: 440px;
+}
+
+.book_room_container .room_container{
+    display: inline-flex;
+    position: relative;
+    margin: auto 20px 30px;
+    align-items: center;
+    justify-content: center;
+    left:103px ;
+    bottom: 90px;
+}
+
+.book_room_container .h5_1{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    top: 40px;
+    right: 10px;
+    font-size: 35px;
+    z-index: 1000;
+}
+
+.room_container_div{
+    max-width: 396.5px;
+    padding: 10px;
+    padding-top: 0;
+    border-radius: 20px;
+    border: 1.5px black solid;
+
+}
+
+.room_details div{
+    position: relative;
+display: flex;
+margin: 10px;
+background-color: rgba(207, 206, 206, 0.721);
+align-items: center;
+padding: 5px;
+height: 25px;
+}
+
+.room_details{
+    position: relative;
+    bottom: 20px;
+}
+.room_details div p{
+position: relative;
+top: 7px;
+}
+
+.room_price{
+    position: relative;
+    color: #f2c335;
+    margin-left: 290px;
+    margin-top: 15px;
+    width: 90px;
+    height: 65px;
+    padding: 5px;
+    border-radius: 1%;
+    border: 2px #f2c335 solid;
+}
+.room_price h4{
+    position: relative;
+    left: 10px;
+}
+
+.room_price p{
+    position: relative;
+    left: 8px;
+    bottom: 7px;
+}
+
+.room_container h5{
+    position: relative;
+    bottom: 45px;
+    margin-left: 10px;
+}
+
+.room_container button{
+    position: relative;
+    color:white;
+    background-color: #f2c335;
+    padding: 7px 12px;
+    border-radius: 5px;
+    bottom: 5px;
+}
+
+
+.book_room_pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book_room_pages ul{
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+.book_room_pages ul li{
+    margin: 10px;
+    padding: 5px 10px;
+    border: 0.5px black solid;
+    color: white;
+    background-color: rgba(210, 210, 210, 0.593);
+}
+.book_room_pages a{
+    text-decoration: none;
+}

@@ -1,0 +1,1243 @@
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.navbar{
+    position: relative;
+    display: flex;
+    z-index: 10000;
+}
+
+.hotel_name{
+    position: relative;
+    left: 30px;
+}
+
+.navbar ul{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    left: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    text-decoration: underline white;
+}
+
+.navbar li{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.hotel_links{
+    display: flex;
+    position: relative;
+    right: 30px;
+    bottom: 8px;
+}
+
+.hotel_links p{
+    color: white;
+    margin: 5px;
+}
+
+.hotel_links button{
+    position: relative;
+    padding: 5px 10px;
+    color: black;
+    border-radius: 5px;
+    border: 1px orange solid;
+    background-color: orange;
+    margin-left: 5px;
+}
+
+.hotel_links button:hover{
+    text-decoration: underline black;
+}
+
+
+
+
+.menu {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    width: fit-content;
+    display: flex;
+    list-style: none;
+    
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+    
+    .menu .link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 36px;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .menu .link::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .menu .link svg {
+        width: 26px;
+        height: 14px;
+        fill: #000000;
+        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .menu .item {
+        position: relative;
+    }
+    
+    .menu .item .submenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        border-radius: 0 0 16px 16px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #cccccc;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px);
+        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+        z-index: 1;
+        pointer-events: none;
+        list-style: none;
+        background-color: #000000;
+        z-index: 10000000;
+    }
+    
+    .menu .item:hover .submenu {
+        position:absolute;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+        border-top: transparent;
+        border-color: #f2c335;
+        width: 150px;
+        z-index: 100000000;
+    }
+    
+    .menu .item:hover .link {
+        color: #ffffff;
+        border-radius: 16px 16px 0 0;
+    }
+    
+    .menu .item:hover .link::after {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    
+    .menu .item:hover .link svg {
+        fill: #ffffff;
+        transform: rotate(-180deg);
+    }
+    
+    .submenu .submenu-item {
+        width: 100%;
+        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .submenu .submenu-link {
+        display: block;
+        padding: 12px 24px;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .submenu .submenu-item:last-child .submenu-link {
+        border-bottom: none;
+    }
+    
+    .submenu .submenu-link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scaleX(0);
+        width: 100%;
+        height: 100%;
+        background-color: #f2c335;
+        z-index: -1;
+        transform-origin: center;
+        transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .submenu .submenu-link:hover:before {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    
+    .submenu .submenu-link:hover {
+        color: #ffffff;
+    }
+    
+
+    .fa-bars{
+        display: none;
+        color: white;
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+
+    .center_paragraph{
+        position: relative;
+        z-index: 1000000;
+        margin-top: 75px;
+        margin-left: 550px;
+        color: #000000;
+    } 
+
+
+.center_disc{
+    margin-left: 85px;
+    color: white;
+}
+
+.btn_explore{
+    padding: 5px 7px;
+    color:aliceblue;
+    border-color:#f2c335 ;
+    background-color: #f2c335;
+    margin-left: 135px;
+    cursor: pointer;
+}
+
+.image_interface{
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 440px;
+}
+
+.get_room{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    clip-path: inset(0 10% 0 5%);
+    align-items: center;
+    justify-content: center;
+    right: 210px;
+    width: 1060px;
+    height: 75px;
+    bottom: 260px;
+    border-bottom:1px #0000006c solid;
+}
+.get_room .input_in,
+.get_room .input_out
+{
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    width: 135px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+
+
+.get_room .input_in
+{
+    right: 80px;
+}
+
+.get_room .input_out{
+    right: 90px;
+}
+
+
+
+.get_room .get_room_label1, .get_room .get_room_label2{
+    margin-right: 5px;
+}
+
+.get_room .get_room_label2, .get_room .get_room_label3{
+    margin-left: 0;
+}
+
+.get_room .get_room_count1, .get_room .get_room_count2, .get_room .get_room_count3{
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    right: 68px;
+    align-items: center;
+    justify-content: center;
+}
+
+.get_room .get_room_count2{
+    right: 65px;
+}
+
+.get_room .get_room_count1{
+    right: 72px;
+}
+.fa-minus, .fa-plus{
+    cursor: pointer;
+    padding: 2.5px;
+    background-color: orange;
+    border-radius: 50%;
+    border:1px black solid ;
+    
+}
+
+.get_room .get_room_count1 span, .get_room .get_room_count2 span, .get_room .get_room_count3 span{
+margin: 2.5px;
+border: none;
+outline: none;
+opacity: 50%;
+}
+
+.get_room label{
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+form{
+margin: auto;
+}
+form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    background-color: orange;
+    width: 110px;
+    margin-left: 0;
+}
+
+.hotel_paragraph2{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph_p_1{
+    margin-bottom: 0;
+}
+
+
+.paragraph_h1_1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.paragraph_h1_2{
+    margin-top: 0;
+}
+
+.paragraph_p_2{
+    font-weight:bold ;
+    font-size: 20px;
+}
+
+.paragraph{
+    max-width:390px ;
+}
+
+.paragraph_p_3{
+    margin-bottom: 0;
+}
+
+.CEO_man{
+    display: flex;
+    margin-top: 0;
+}
+
+.CEO_name{
+display: block;
+margin-left: 10px;
+margin-top: 30px;
+}
+
+.paragraph_h6_1{
+    margin-bottom: 0;
+}
+.paragraph_p_4{
+    margin-top: 0;
+    color: rgb(225, 199, 51);
+}
+    
+
+.profile_photo{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.signature{
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.paragraph_photos{
+    margin-left: 10px;
+}
+
+.paragraph_photos .view1{
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.paragraph_photos .view2{
+margin-top: 20px;
+}
+
+.paragraph_photos .view1, .paragraph_photos .view2{
+    
+    width: 250px;
+    height: 400px;
+}
+
+.hotel_bottom{
+
+    position: relative;
+    background-color:rgba(169, 169, 169, 0.368) ;
+    height: 400px;
+}
+
+.package{
+position: relative;
+top: 30px;
+}
+
+.hotel_bottom .bottom_paragraph{
+text-align: center;
+color: #000000;
+
+
+}
+
+
+
+.bottom_paragraph .bottom_p{
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
+.bottom_paragraph .bottom_h4{
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.bottom_photos{
+    display: flex;
+margin:40px 380px;
+    width: 250px;
+    height: 250px;
+}
+
+.room1{
+    margin-right: 20px;
+}
+.room2{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.room3{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.footer{
+    position: relative;
+    background-color: black;
+    color: aliceblue;
+    height: 510px;
+    bottom: 0;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+
+
+.footer_about{
+    position: relative;
+    max-width: 350px;
+    right: 150px;
+}
+
+.footer_about a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer_about h2{
+    color: orange;
+    margin-bottom: 0;
+}
+.footer_about_p1{
+    margin-top: 0;
+}
+.footer_about span{
+    position: relative;
+    bottom: 1.5px;
+}
+.fa-arrow-right{
+    font-size: 20px;
+    color: orange;
+}
+
+
+.link .footer_link{
+    display: flex;
+}
+
+.link .footer_link div{
+    position: relative;
+    top: 12px;
+}
+
+.footer_link a{
+    text-decoration: none;
+}
+
+.footer_link a div{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.footer_link_div1{
+    margin-right: 80px;
+}
+
+
+.footer_form input{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.footer_form button{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+.Account_ul{
+    display: flex;
+    position: relative;
+    right: 15px;
+}
+
+.Account_ul p{
+    position: relative;
+    bottom: 7.9px;
+    right: 15px;
+}
+
+.Account_ul li{
+    margin-right: 30px;
+}
+
+
+.footer_form span{
+    font-size: 25px;
+}
+
+.footer ul hr{
+    position: relative;
+    width: 80%;
+    left: 120px;
+}
+
+.footer_div{
+    display: flex;
+    position: relative;
+    top: 50px;
+    margin-bottom: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    position: relative;
+    display: flex;
+    margin-left: 150px;
+}
+.copyright p{
+margin-right: 5px;
+}
+/* mobile*/
+@media (max-width: 921px){
+    .fa-bars{
+        display: flex;
+    }
+    .navbar .nav_first_ul{
+        display: none;
+    }
+    .hotel_links{
+        display: none;
+    }
+}
+
+/*mobil_s*/
+@media (max-width: 320px){
+    body{
+        margin: 0;
+        padding: auto;
+        box-sizing: border-box;
+        width: 320px;
+    }
+    .fa-bars{
+        position: relative;
+margin-right: 475px;
+    }
+.image_interface{
+    display: flex;
+    position: absolute;
+    width: 320px;
+    height: 250px;
+}
+div .center_paragraph{
+    position: relative;
+margin-left: 0;
+right: 25px;
+}
+.center_paragraph_h1{
+    margin-left: 50px;
+}
+.center_disc{
+    position: relative;
+    color: #000000;
+    left: 15px;
+}
+.btn_explore{
+    position: relative;
+    left: 18px;
+}
+.hotel_paragraph2{
+    position: relative;
+    display: block;
+    width: 280px;
+    margin-top: 25px;
+right: 30px;
+}
+.profile_photo{
+    width: 100px;
+    height: 100px;
+}
+.CEO_name{
+    position: relative;
+    bottom: 2px;
+}
+.signature{
+display: none;
+}
+.paragraph_photos{
+position: relative;
+right: 65px;
+}
+.view1{
+    position: relative;
+    top: 50px;
+}
+.view2{
+    position: relative;
+    top: 50px;
+}
+.hotel_bottom{
+    width: 320px;
+}
+.bottom_paragraph{
+    position: relative;
+    right: 230px;
+}
+.bottom_photos{
+position: relative;
+margin-left: 305px;
+}
+.bottom_photos .room1, .bottom_photos .room2, .bottom_photos .room3{
+width: 100px;
+height: 100px;
+margin: auto 2px;
+}
+div .footer{
+    width: 320px;
+    height: 1220px;
+}
+.footer_div{
+    display: block;
+}
+.footer_div .footer_about{
+    position: relative;
+    max-width: 280px;
+    left: 20px;
+}
+.link{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.link .footer_link_div1{
+    margin-right: 35px;
+}
+
+.footer_form{
+    position: relative;
+    margin-top: 30px;
+}
+.footer_form p{
+    position: relative;
+    right: 130px;
+}
+.footer_form form{
+    position: relative;
+    right: 130px;
+}
+.Account_ul{
+    position: relative;
+    right: 30px;
+}
+.Account_ul li{
+    position: relative;
+    right: 120px;
+}
+.footer_form span{
+position: relative;
+right: 130px;
+font-size: 24px;
+}
+.copyright{
+    position: relative;
+    right: 130px;
+}
+}
+/*mobil_m*/
+@media (min-width: 321px) and (max-width: 375px){
+    body{
+        margin: 0;
+        padding: auto;
+        box-sizing: border-box;
+        width: 375px;
+    }
+    .fa-bars{
+        position: relative;
+margin-right: 420px;
+    }
+    .image_interface{
+        width: 375px;
+        height: 350px;
+    }
+.center_paragraph{
+    position: relative;
+right: 175px;
+    bottom: 25px;
+}
+.center_disc{
+    position: relative;
+    color: #000000;
+right: 30px;
+}
+.btn_explore{
+position: relative;
+right: 30px;
+}
+.hotel_paragraph2{
+    position: relative;
+    width: 330px;
+    display: block;
+    margin-top: 110px;
+    right: 25px;
+}
+.profile_photo{
+    width: 100px;
+    height: 100px;
+}
+.CEO_name{
+    position: relative;
+    bottom: 2px;
+}
+.signature{
+display: none;
+}
+.paragraph_photos{
+    position: relative;
+    right: 45px;
+}
+.view1{
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+.view2{
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+.hotel_bottom{
+    width: 375px;
+}
+.bottom_paragraph{
+    position: relative;
+    right: 200px;
+}
+.bottom_photos .room1, .bottom_photos .room2, .bottom_photos .room3{
+width: 120px;
+height: 120px;
+margin: auto 3px;
+}
+.bottom_photos{
+    position: relative;
+margin-left: 300px;
+}
+div .footer{
+    height: 1210px;
+    width: 375px;
+}
+.footer_div{
+    display: block;
+}
+div .footer_about{
+    position: relative;
+    max-width: 320px;
+    left: 20px;
+}
+.link{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.link .footer_link_div1{
+    margin-right: 60px;
+}
+
+.footer_form{
+    position: relative;
+    margin-top: 30px;
+}
+.footer_form p{
+    position: relative;
+    right: 130px;
+}
+.footer_form form{
+    position: relative;
+    right: 130px;
+}
+.Account_ul{
+    position: relative;
+    right: 30px;
+}
+.Account_ul li{
+    position: relative;
+    right: 120px;
+}
+.footer_form span{
+position: relative;
+right: 130px;
+font-size: 24px;
+}
+.copyright{
+    position: relative;
+    right: 130px;
+}
+}
+/*mobil_l*/
+@media (min-width: 375px) and (max-width: 425px){
+    .image_interface{
+        width: 425px;
+        height: 350px;
+    }
+.center_paragraph{
+    position: relative;
+    margin-left: 65px;
+    bottom: 25px;
+}
+.center_disc{
+    color: #000000;
+    margin-left: 30px;
+}
+.btn_explore{
+    margin-left: 85px;
+}
+.hotel_paragraph2{
+    display: block;
+    margin-top: 110px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.profile_photo{
+    width: 100px;
+    height: 100px;
+}
+.CEO_name{
+    position: relative;
+    bottom: 2px;
+}
+.signature{
+display: none;
+}
+.view1{
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+.view2{
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+.hotel_bottom{
+    width: 425px;
+}
+.room1, .room2, .room3{
+width: 150px;
+height: 130px;
+margin: auto 5px;
+}
+.bottom_photos{
+    position: relative;
+    max-height:200px ;
+    right: 377px;
+}
+.footer{
+    height: 1180px;
+    width: 425px;
+}
+.footer_div{
+    display: block;
+}
+.footer_about{
+    position: relative;
+    max-width: 380px;
+    left: 20px;
+}
+.link{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.footer_link_div1{
+    margin-right: 65px;
+}
+
+.footer_form{
+    position: relative;
+    margin-top: 30px;
+}
+.footer_form p{
+    position: relative;
+    right: 130px;
+}
+.footer_form form{
+    position: relative;
+    right: 130px;
+}
+.Account_ul{
+    position: relative;
+    right: 30px;
+}
+.Account_ul li{
+    position: relative;
+    right: 120px;
+}
+.footer_form span{
+position: relative;
+right: 130px;
+font-size: 24px;
+}
+.copyright{
+    position: relative;
+    right: 130px;
+}
+}
+
+@media (max-width: 767px){
+    body{
+        margin: 0;
+        padding: auto;
+        box-sizing: border-box;
+        min-width: 767px;
+    }
+    .fa-bars{
+        position: relative;
+        right: 10px;
+    }
+    .image_interface{
+        width: 767px;
+        height: 350px;
+    }
+.center_paragraph{
+    position: relative;
+    margin-left: 220px;
+    bottom: 25px;
+}
+.center_disc{
+    color: #000000;
+    margin-left: 65px;
+}
+.btn_explore{
+    margin-left: 120px;
+}
+.hotel_paragraph2{
+    display: block;
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 15px;
+}
+.hotel_paragraph2 .paragraph{
+    max-width: 750px;
+}
+.profile_photo{
+    width: 100px;
+    height: 100px;
+}
+.CEO_name{
+    position: relative;
+    bottom: 2px;
+}
+
+.view1{
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+.view2{
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+.hotel_bottom{
+    width: 767px;
+}
+.room1, .room2, .room3{
+width: 200px;
+height: 200px;
+margin: auto 5px;
+}
+.bottom_photos{
+    position: relative;
+    max-height:200px ;
+    right: 299px;
+}
+.footer{
+    height: 1030px;
+    width: 767px;
+}
+.footer_div{
+    display: block;
+}
+.footer_about{
+    position: relative;
+    max-width: 680px;
+    left: 20px;
+}
+.link{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.footer_link_div1{
+    margin-right: 125px;
+}
+
+.footer_form{
+    position: relative;
+    margin-top: 30px;
+}
+.footer_form p{
+    position: relative;
+    right: 130px;
+}
+.footer_form form{
+    position: relative;
+    right: 130px;
+}
+.Account_ul{
+    position: relative;
+    right: 30px;
+}
+.Account_ul li{
+    position: relative;
+    right: 120px;
+}
+.footer_form span{
+position: relative;
+right: 130px;
+font-size: 24px;
+}
+.copyright{
+    position: relative;
+    right: 130px;
+}
+}
+
+
+/*small screen*/
+@media (min-width: 768px) and (max-width: 991px){
+    body{
+        margin: 0;
+        padding: auto;
+        box-sizing: border-box;
+        min-width: 991px;
+    }
+    .nav_first_ul{
+        position: relative;
+    }
+    .hotel_links{
+        position: relative;
+        margin-left: 0;
+    }
+.image_interface{
+    width: 991px;
+    height: 450px;
+}
+.center_paragraph{
+    position: relative;
+    margin-left: 320px;
+}
+
+.hotel_paragraph2{
+    margin-left: 10px;
+}
+.bottom_photos{
+    width: 991px;
+    margin-left: 100px;
+}
+footer{
+    width: 1024px;
+}
+.footer_about{
+    position: relative;
+    max-width: 300px;
+    top: 20px;
+right: 10px;
+}
+.footer_link{
+    margin-right: 0;
+}
+.link{
+    position: relative;
+    left: 50px;
+}
+.footer_link_div1{
+    margin-right: 15px;
+}
+.footer_link_div2{
+    margin-right: 0;
+}
+.footer_form{
+    position: relative;
+    margin-right: 50px;
+}
+.footer_div{
+    margin-right: 100px;
+}
+.copyright{
+    margin-left: 10px;
+}
+}
+/*medium screen*/
+@media (min-width: 992px) and (max-width: 1024px){
+    body{
+        margin: 0;
+        padding: auto;
+        box-sizing: border-box;
+        min-width: 1024px;
+    }
+    .nav_first_ul{
+        position: relative;
+    }
+    .hotel_links{
+        position: relative;
+        margin-left: 0;
+    }
+.image_interface{
+    width: 1024px;
+    height: 500px;
+}
+.center_paragraph{
+    width: 400px;
+    margin-left: 350px;
+    margin-top: 125px;
+}
+.hotel_paragraph2{
+    margin-left: 20px;
+}
+.bottom_photos{
+    width: 1024px;
+    margin-left: 130px;
+}
+footer{
+    width: 1024px;
+}
+.footer_about{
+    position: relative;
+    max-width: 300px;
+    top: 20px;
+right: 10px;
+}
+.footer_link{
+    margin-right: 0;
+}
+.link{
+    position: relative;
+    left: 50px;
+}
+.footer_link_div1{
+    margin-right: 15px;
+}
+.footer_link_div2{
+    margin-right: 0;
+}
+.footer_form{
+    position: relative;
+    margin-right: 50px;
+}
+.footer_div{
+    margin-right: 100px;
+}
+.copyright{
+    margin-left: 10px;
+}
+}
+/*large screen*/
+@media (min-width: 1200px){
+
+}

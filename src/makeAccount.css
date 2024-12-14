@@ -1,0 +1,841 @@
+.log-in-container{
+    display: flex;
+    justify-content: center;
+}
+
+.log-welcome{
+    position: relative;
+    display: block;
+    left: 0;
+    top: 70px;
+    z-index: 1000;
+}
+
+.log-welcome span{
+    color: orange;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 50px;
+    right: 5px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    border: 1px black solid;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    z-index: 1000;
+    margin-bottom: 90px;
+    }
+    
+.log_title{
+    display: flex;
+    color: orange;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    ::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    
+    .form button {
+    align-self: flex-end;
+    }
+    
+    .flex-column > label {
+    color: #151717;
+    font-weight: 600;
+    }
+    
+    .inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+    }
+    
+    .input {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 85%;
+    height: 100%;
+    }
+    
+    .input:focus {
+    outline: none;
+    }
+    
+    .inputForm:focus-within {
+    border: 1.5px solid orange;
+    }
+    
+    .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    }
+    
+    .flex-row > div > label {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    }
+    
+    .span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #2d79f3;
+    font-weight: 500;
+    cursor: pointer;
+    }
+    
+    .button-submit {
+    margin: 20px 0 10px 0;
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    }
+    
+    .button-submit:hover {
+    background-color: #252727;
+    }
+    
+    .p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin: 5px 0;
+    }
+    
+    .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #ededef;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    }
+    
+    .btn:hover {
+    border: 1px solid #2d79f3;
+    }
+    .line{
+        display: flex;
+        margin: 0 15px 10px;
+    }
+    .p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto 15px;
+    }
+
+
+.flex-row{
+    display: block;
+}
+
+.btn_google{
+    display: flex;
+    background: none;
+    border: none;
+    justify-content: center;
+    border: 1.5px solid;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.btn_google:hover{
+    border: 1.5px solid orange;
+}
+
+
+.btn_facebook{
+    display: flex;
+    background: none;
+    border: none;
+    justify-content: center;
+    margin-top: 5px;
+    border: 1.5px solid;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.btn_facebook:hover{
+    border: 1.5px solid orange;
+}
+
+.btn_apple{
+    display: flex;
+    background: none;
+    border: none;
+    justify-content: center;
+    margin-top: 5px;
+    border: 1.5px solid;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.btn_apple:hover{
+    border: 1.5px solid orange;
+}
+
+    .Facebook_Logo{
+        width: 23px;
+        margin-left: 15px;
+    }
+
+.apple_Logo{
+    width: 21px;
+    margin-left:-11px ;
+}
+
+.welcome_register{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 140px;
+}
+
+.register-form label{
+    display: block;
+
+}
+
+.register-form input{
+    margin-bottom: 30px;
+    outline: none;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.form1{
+    display: flex;
+} 
+.form2{
+    display: flex;
+    margin-left: 30px;
+} 
+
+.form2 .Phone{
+    width: 20.35%;
+    margin-right: 20px;
+}
+
+.form2 .Country{
+    width: 20.35%;
+}
+
+.form2 .Country_label{
+    position: relative;
+    left: 69px;
+}
+
+.form3{
+    display: flex;
+    margin-left: 7px;
+}
+
+.form3 label{
+    position: relative;
+    left: 80px;
+}
+
+.form3 .Confirm_Password_label{
+    position: relative;
+    left: 89px;
+}
+
+.form3 .Password{
+    width: 20.15%;
+}
+
+.form3 .Confirm_Password{
+    position: relative;
+    right: 51px;
+}
+
+.form4{
+    display: flex;
+    margin-left: 37px;
+}
+
+.form4 .Email{
+    width: 20.35%;
+}
+
+.form4 label{
+    position: relative;
+    bottom: 25px;
+    left: 49px;
+}
+
+.form1 label{
+    position: relative;
+    bottom: 25px;
+    left: 88px;
+} 
+
+.form1 .Last_Name_label{
+    position: relative;
+    left: 87px;
+}
+
+.form2 label{
+    position: relative;
+    bottom: 25px;
+    left: 57px;
+} 
+.form3 label{
+    position: relative;
+    bottom: 25px;
+}
+
+.register-bar{
+    position: relative;
+    margin-top: 150px;
+    margin-left: 400px;
+    margin-bottom: 190px;
+}
+
+.reg-submit{
+    position: relative;
+    width: 30%;
+    height: 50px;
+    color: #ededef;
+    background-color: #151717;
+    border-radius: 10px;
+    margin-left: 160px;
+}
+
+/* style of contact*/
+
+.hotel_img_contact{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 440px;
+}
+
+.title_contact{
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    color: #000000;
+    z-index: 1000;
+}
+
+
+.contact_middle{
+    position: absolute;
+    display: flex;
+    top: 550px;
+    z-index: 10000;
+}
+
+.contact_middle .second_div_middle_contact{
+    position: relative;
+    top: 7px;
+    right: 130px;
+}
+
+
+.second_div_middle_contact h6{
+    color: #f2c335;
+}
+
+.second_div_middle_contact h1{
+    color: #151717;
+}
+
+.second_div_middle_contact .p_one{
+    color: rgb(73, 72, 72);
+}
+
+.third_div_middle_contact, .forth_div_middle_contact{
+    display: flex;
+    color: #151717;
+}
+
+.third_div_middle_contact .a{
+margin-right: 70px;
+}
+
+.forth_div_middle_contact .c{
+    margin-right: 45px;
+}
+
+.third_div_middle_contact p{
+    color: rgb(73, 72, 72);
+    margin-left: 35px;
+} 
+
+.forth_div_middle_contact p{
+color: rgb(73, 72, 72);
+margin-left: 30px;
+}
+
+.fa-phone-volume, .fa-envelope, .fa-earth-africa, .fa-location-dot{
+    color: #f2c335;
+    margin-right: 10px;
+}
+
+.fa-earth-africa{
+    margin-right: 10px;
+}
+
+.fifth_div_middle_contact h4{
+    color: #151717;
+}
+
+.fifth_div_middle_contact .parent{
+    position: relative;
+    right: 180px;
+}
+
+.youtube_logo{
+    width: 18px;
+}
+
+.name, .number, .email, .message{
+    margin-bottom:20px ;
+    margin-left: 405px;
+    width:500px ;
+    height:50px ;
+    border-radius: 10px;
+    border:1px #151717 solid;
+}
+
+.email{
+    margin-top: 10px;
+}
+
+.message{
+    position: relative;
+    max-width: 500px;
+    height:150px ;
+}
+
+.name:hover, .number:hover, .email:hover, .message:hover{
+    border: 1px #f2c335 solid;
+}
+
+.send{
+    margin-bottom:30px ;
+    margin-left: 405px;
+    width:150px ;
+    height:50px ;
+    border-radius: 10px;
+    background-color: #f2c335;
+}
+
+.send:hover{
+    border: 1px black solid;
+}
+
+.contact_form{
+    position: relative;
+    top: 5px;
+    right: 130px;
+}
+
+.contact_form label{
+    position: relative;
+    color: #000;
+    left: 405px;
+}
+
+.contact_form .Your_Email_contact{
+    position: absolute;
+    color: #000;
+    top: 170px;
+    left: 405px;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .child {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease-in-out;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    
+    .child:hover {
+        background-color:#f2c335;
+        background-position: -100px 100px, -100px 100px;
+        transform: rotate3d(0.5, 1, 0, 30deg);
+        transform: perspective(180px) rotateX(60deg) translateY(2px);
+        box-shadow: 0px 10px 10px rgb(0, 0, 0);
+    }
+    
+    button {
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+    }
+    
+    .button:hover {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+        border-radius: 50%;
+    }
+
+
+.googleMap{
+    display: flex;
+    position: relative;
+    margin-top: 250px;
+    margin-bottom: 5px;
+}
+
+
+.cop_right{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: 80px;
+    width: 100%;
+    margin-top: 1303px;
+}
+
+.hotel_about_image{
+    width: 100%;
+    height: 300px;
+}
+
+.title_about{
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    z-index: 1000;
+color: #ecedec;
+}
+
+
+.title_about div{
+    position: relative;
+    top: 50px;
+    right: 155px;
+}
+.title_about div span{
+    color: #f2c335;
+}
+
+
+.middle_about{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+}
+
+.about_p1{
+    margin-bottom: 0;
+    color: #f2c335;
+    font-family:serif;
+}
+
+.about_p2{
+    max-width: 500px;
+}
+
+.about_manager{
+    display: flex;
+}
+
+.about_manager_name p{
+    position: relative;
+    color: #f2c335;
+margin-bottom: 0;
+top: 30px;
+left: 19px;
+}
+
+.about_manager_name img{
+
+    margin-top: 0;
+}
+
+.profile_photo2{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.about_paragraph{
+    position: relative;
+    margin-right: 70px;
+    left: 150px;
+}
+
+.small_hotel_about_image{
+    position: relative;
+    display: flex;
+    border-radius: 40%;
+    width: 500px;
+    height: 500px;
+    margin-left:150px ;
+}
+
+.on_small_hotel_about_image{
+    display: block;
+    position: relative;
+background-color: white;
+border-radius: 10px;
+width: 140px;
+height: 100px;
+box-shadow: 0.5px 0.5px 0.9px black;
+bottom: 220px;
+right: 170px;
+z-index: 1000;
+}
+
+.on_small_hotel_about_image h1{
+    position: relative;
+    left: 40px;
+    margin-bottom: 0;
+    font-family:fantasy;
+}
+
+.fa-star{
+    position: relative;
+    left: 15px;
+    color: gold;
+    font-size: 20px;
+}
+
+.on_small_hotel_about_image p{
+    position: relative;
+    font-size: 15px;
+    left: 26px;
+}
+
+.middle_about2{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+}
+
+.middle_about2_image{
+    position: relative;
+    margin-right: 70px;
+    margin-left: 170px;
+}
+
+.poal{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.spa{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    top: 50px;
+}
+
+.house_keeber{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    bottom: 40px;
+}
+
+.gym{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    margin-left: 20px;
+}
+
+.middle_about2_paragraph{
+    position: relative;
+    max-width: 690px;
+    height: 200px;
+    bottom: 158px;
+    margin-left: 50px;
+}
+
+.middle_about2_paragraph_p1{
+    color: #f2c335;
+    margin-bottom: 0;
+}
+
+.middle_about2_paragraph h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.middle_about2_paragraph_line{
+    position: relative;
+    font-size: 60px;
+    color: #f2c335;
+    bottom: 90px;
+}
+
+.middle_about2_paragraph_line span{
+    position: relative;
+    font-size: 90px;
+    top: 11px;
+}
+
+.middle_about2_paragraph_p2{
+    position: relative;
+    margin: 30px auto;
+    bottom: 95px;
+}
+
+.middle_about2_paragraph_image1, .middle_about2_paragraph_image2, .middle_about2_paragraph_image3{
+    position: relative;
+    display: flex;
+    bottom: 90px;
+}
+
+.middle_about2_paragraph_image1 div, .middle_about2_paragraph_image2 div, .middle_about2_paragraph_image3 div{
+margin-right: 20px;
+font-weight: bold;
+}
+
+.middle_about2_paragraph_Explore_Feature{
+    position: relative;
+    color: #f2c335;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px #f2c335 solid;
+    bottom: 55px;
+}
+
+.middle_about2_paragraph_Explore_Feature:hover{
+    border: 1px #000000 solid;
+}
+
+.middle_about3{
+    position: relative;
+    display: flex;
+    background-color: rgba(202, 202, 202, 0.626);
+    top: 150px;
+    height: 400px;
+}
+
+.icons{
+display:flex ;
+align-items: center;
+margin-top: 20px;
+
+}
+
+.icons2{
+    display:flex ;
+    align-items: center;
+    
+    }
+
+    .icons2 div{
+        background-color: white;
+        margin: auto 20px 10px 0;
+        width: 100px;
+    }
+
+
+.icons div{
+    background-color: white;
+    margin: auto 20px 10px 0;
+    width: 100px;
+}
+
+.icons img, .icons2 img{
+    position: relative;
+    width: 55px;
+    padding: 10px;
+    left: 20px;
+}
+
+.icons .icons_first_div{
+    background-color: #f2c335;
+}
+
+
+.middle_about3_slider{
+    position: relative;
+    width: 550px;
+    height: 500px;
+    top: 50px;
+    left: 290px;
+}
+
+.carousel-control-next .carousel-control-next-icon, .carousel-control-prev .carousel-control-prev-icon{
+padding: 10px;
+border-radius: 50%;
+background-color: #000;
+}
+
+.carousel-inner p{
+color: rgb(76, 73, 73);
+}
+

@@ -1,0 +1,148 @@
+.hotel_team div img{
+  border-radius: 50%;
+  border: 3px #000000 solid;
+  width: 225px;
+  height: 225px;
+  position: relative;
+  bottom: 160px;
+  left: 20px;
+}
+.hotel_team div p{
+  max-width: 250px;
+}
+
+.hotel_team{
+  display: flex;
+  margin-top: 400px;
+  margin-bottom: 200px;
+  height: 650px;
+  justify-content: center;
+}
+.hotel_team h3{
+  position: relative;
+top: 110px;
+}
+
+.hotel_team p{
+  position: relative;
+  bottom: 110px;
+  margin-bottom: 10px;
+}
+
+.hotel_team .Manager, .hotel_team .SEO, .hotel_team .Chef, .hotel_team .Security{
+margin: 20px;
+border: 2px black solid;
+border-radius: 20px;
+padding: 10px;
+box-shadow: 0.5px 0.5px 0.5px rgba(41, 41, 41, 0.768);
+}
+
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 50px;
+  width: 100%;
+  padding-right: 30px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+.social_media_container1,
+.social_media_container2,
+.social_media_container3,
+.social_media_container4{
+  width: 270px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  border: 1px black solid;
+  border-radius: 50px;
+  position: relative;
+  bottom: 100px;
+}
+.social_media_container1{
+  bottom: 55px;
+}
+.social_media_container2{
+  bottom: 80px;
+}
+.social_media_container3{
+  bottom: 55px;
+}
